@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+}
+.container {
+    margin: 2em auto;
+    padding: 1em auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.datos, .pagos {
+    margin: 1em auto;
+    display: block;
+    text-align: center;
+}
+
+.btn {
+    display:block;
+    margin: 1em auto;
+}
+.btn-close {
+    display: none;
+}
+
+.pagos, .listado {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./assets/faviconJS.png" type="image/x-icon">
+		<!-- Sweet Alert -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<!-- Toastify -->
+		<script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" rel="stylesheet">
+		<!-- Estilos propios -->
+		<link rel="stylesheet" href="css/styles.css" />
+		
+		<title>Proyecto Final JS</title>
+	</head>
+	<body>
+		<h1>Calculadora de pagos a Profes</h1>
+		<div class="container">
+			<div class="info">
+				<div class="cargaDatos">
+					<label class="datos"for="num-clases">Indicar cuántas clases se dictaron en el mes</label>					
+					<input class="datos" type="number"  name="num-clases" id="clasesDictadas" min="0" step="1" required/>	
+
+					<label class="datos" for="nombre">Nombre de Alumno:</label>
+					<input class="datos" type="text" name="nombre" id="nombreAlumno" required/>
+
+					<label class="datos"for="apellido">Apellido de Alumno:</label>
+					<input class="datos" type="text" name="apellido" id="apellidoAlumno" required/>
+					
+					<label class="datos"for="tipoDePase">Tipo de Pase:
+                    </label>
+                    
+					<input class="pases" type="radio" name="tipoDePase" id="paseXuna" value="800" required/> Clase Suelta
+                    
+					<input class="pases" type="radio" name="tipoDePase" id="paseXcuatro" value="3000"/> Pack por 4
+					
+					<input class="pases" type="radio" name="tipoDePase" id="paseXocho" value="5600"/> Pack por 8
+					
+                    <button class="btn" id="verPases" class="datos">Ver valores de pases</button>
+                    <button class="btn-close" id="cerrarPases">Ocultar valores de pases</button>
+                    <ul id="valoresPases"></ul>
+					<input class="btn" id="cargarAlumno" type="submit" value="Cargar Alumno">
+
+                    <!-- <button class="btn" id="cargarAlumno">Cargar Alumno</button> -->
+				</div>
+				<div class="infoAlumnos">
+					<div class="tabla" id="tablaAlumnos"></div>
+
+				</div>
+			</div>
+			<div class="pagos">
+				<div id="pagoProfesor">
+				</div>
+				<button class="btn"id="calcularPago" class="datos">Calcular Pago</button>
+			</div>
+			
+			<div class="listado">
+				<button class="btn"id="listarAlfabetica" >Listar Alumnos Alfabéticamente</button>
+				
+				<ul id="listaAlumnosAlfabetica"></ul>
+			</div>
+		<!-- Javascript propio -->
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>
