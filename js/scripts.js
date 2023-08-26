@@ -1,4 +1,6 @@
-/* PROYECTO: Es una calculadora para el pago de honorarios a profesores */
+/* PROYECTO: Es una calculadora para el pago de honorarios a profesores 
+
+ - En la línea 152 hay una aclaración respecto a la ruta del fetch porque tiraba error al ejecutarlo con la ruta correcta*/
 
 const listaAlumnos = [];
 let clasesTomadas = 0;
